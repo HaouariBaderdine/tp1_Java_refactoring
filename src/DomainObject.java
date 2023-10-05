@@ -1,25 +1,25 @@
 public class DomainObject {
 	
-	private String _name;
+	private String name;
 	
 	public DomainObject(String name) {
-		_name = name;
+		this.name = name;
 	};
 
 	public DomainObject() {
-		_name = "no name";
+		name = "no name";
 	};
 
-	public String get_name() {
-		return _name;
+	public String getName() {
+		return name;
 	}
 
-	public void set_name(String _name) {
-		this._name = _name;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public String toString() {
-		return _name;
+		return name;
 	};
 
 }

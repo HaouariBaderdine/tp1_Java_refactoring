@@ -1,31 +1,29 @@
 
 public class Rental extends DomainObject {
 	
-	private int _daysRented;
+	private int daysRented;
 	
-	private Tape _tape;
+	private Tape tape;
 	
 	public Rental(Tape tape, int daysRented) {
-		_tape = tape;
-		_daysRented = daysRented;
+		this.tape = tape;
+		this.daysRented = daysRented;
 	}
 
-	public int get_daysRented() {
-		return _daysRented;
+	public int getDaysRented() {
+		return daysRented;
 	}
 
-	public void set_daysRented(int _daysRented) {
-		this._daysRented = _daysRented;
+	public void setDaysRented(int daysRented) {
+		this.daysRented = daysRented;
 	}
 
-	public Tape get_tape() {
-		return _tape;
+	public Tape getTape() {
+		return tape;
 	}
 
-	public void set_tape(Tape _tape) {
-		this._tape = _tape;
+	public void setTape(Tape tape) {
+		this.tape = tape;
 	}
-	
-	
 
 }

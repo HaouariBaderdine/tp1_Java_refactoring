@@ -1,28 +1,28 @@
 
 public class Tape extends DomainObject {
 	
-	private String _serialNumber;
+	private String serialNumber;
 	
-	private Movie _movie;
-
-	public Movie get_movie() {
-		return _movie;
-	}
-
-	public void set_movie(Movie _movie) {
-		this._movie = _movie;
-	}
+	private Movie movie;
 
 	public Tape(String serialNumber, Movie movie) {
-		set_serialNumber(serialNumber);
-		_movie = movie;
+		setSerialNumber(serialNumber);
+		this.movie = movie;
 	}
 
-	public String get_serialNumber() {
-		return _serialNumber;
+	public String getSerialNumber() {
+		return serialNumber;
 	}
 
-	public void set_serialNumber(String _serialNumber) {
-		this._serialNumber = _serialNumber;
+	public void setSerialNumber(String serialNumber) {
+		this.serialNumber = serialNumber;
 	}
+
+	public Movie getMovie() {
+		// TODO Auto-generated method stub
+		return this.movie;
+	}
+	
+	
+    
 }
